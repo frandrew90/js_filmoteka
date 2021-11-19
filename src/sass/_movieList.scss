@@ -1,0 +1,54 @@
+.moveResult {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 60px;
+  &_moveCard {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100%) - 30px);
+    @media screen and(min-width: 768px) {
+      flex-basis: calc((100% / 2) - 30px);
+    }
+    @media screen and (min-width: 1024px) {
+      flex-basis: calc((100% / 3) - 30px);
+    }
+  }
+
+  &_cardImg {
+    max-width: 100%;
+
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  &_title {
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $primary-text-color;
+  }
+  &_genre {
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+  &_years {
+    display: block;
+    margin-top: 0;
+  }
+  &_genreList {
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.vote {
+  padding: 1px 10px;
+  color: $primary-bg-color;
+  text-align: center;
+  background: $secondary-text-color;
+  border-radius: 5px;
+}
